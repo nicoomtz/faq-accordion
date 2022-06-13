@@ -17,6 +17,8 @@
 }
 
 .respuesta-wrapper-texto {
+  margin-top: 15px;
+  text-align: justify;
   display: none;
 }
 
