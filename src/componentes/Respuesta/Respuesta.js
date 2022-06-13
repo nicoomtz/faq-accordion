@@ -9,7 +9,6 @@ function Respuesta({ texto, textoRta, id }) {
   function cambiarEstado(id) {
     if(estado || !estado){
       setEstado(!estado)
-      console.log(estado)
     }
 
 
@@ -17,14 +16,12 @@ function Respuesta({ texto, textoRta, id }) {
       document.getElementById(`${id}`).classList.add('seleccionado');
       document.querySelector(`[valor='${id}']`).classList.add('visible');
       document.querySelector('.respuesta-arrow').classList.add('arrow');
-      console.log(id)
     }
     
     if(estado) {
         document.getElementById(`${id}`).classList.remove('seleccionado');
         document.querySelector(`[valor='${id}']`).classList.remove('visible');
         document.querySelector('.respuesta-arrow').classList.remove('arrow');
-        console.log(id)
     }
   }
 
