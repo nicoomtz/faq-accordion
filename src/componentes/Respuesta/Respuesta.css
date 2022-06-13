@@ -1,0 +1,37 @@
+.respuesta {
+  width: 400px;
+  color: var(--Dark-grayish-blue);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  background-color: white;
+}
+
+.respuesta-texto {
+  font-weight: bold;
+}
+
+.respuesta-wrapper-texto {
+  display: none;
+}
+
+.arrow {
+  transform: rotate(180deg);
+}
+
+.linea {
+  border-bottom: 1px solid rgba(146, 146, 146, 0.616);
+}
+
+.seleccionado {
+  color: var(--Very-dark-grayish-blue)
+}
+
+.visible {
+  display: flex;
+}

@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Woman from './imagenes/illustration-woman-online-desktop.svg'
+import Pattern from './imagenes/bg-pattern-desktop.svg'
+import Pregunta from './componentes/Pregunta/Pregunta';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flexbox'>
+    <div className='container'>
+      <img src={Pattern} alt='pattern' className='pattern' />
+      <img src={Woman} alt='logo'className='logo-mujer'/>
+      <Pregunta />
+    </div>
     </div>
   );
 }

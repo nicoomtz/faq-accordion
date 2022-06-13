@@ -1,0 +1,8 @@
+.pregunta-container{
+  padding: 80px;
+}
+
+.pregunta-title {
+  color: var(--Very-dark-grayish-blue);
+  margin-bottom: 50px;
+}
