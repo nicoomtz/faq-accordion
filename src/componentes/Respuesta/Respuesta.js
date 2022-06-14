@@ -15,33 +15,32 @@ function Respuesta({ texto, textoRta, id }) {
     if(!estado){
       // Cerrar otro elemento si es que está abierto
       if(document.querySelector('.seleccionado')){
-        if(document.querySelector('.seleccionado'))
+        if(document.querySelector('.seleccionado')){
           document.querySelector('.seleccionado').classList.remove('seleccionado');
-
-          if(document.querySelector('.visible'))
-            {
-              document.querySelector('.visible').classList.remove('visible');
-
-              if(document.querySelector('.arrow'))
-                {
-                  document.querySelector('.arrow').classList.remove('arrow');
-                }
         }
-    }
       
+        
+        if(document.querySelector('.visible')){
+          document.querySelector('.visible').classList.remove('visible');
+        }
+        if(document.querySelector('.arrow')){
+          document.querySelector('.arrow').classList.remove('arrow');
+        }
+      }
       // Switchear elemento a ON
       document.getElementById(`${id}`).classList.add('seleccionado');
       document.querySelector(`[valor='${id}']`).classList.add('visible');
       document.querySelector(`[value='${id}']`).classList.add('arrow');
-      
     }
+      
+      
     
     if(estado) {
       
       // Switchear elemento a ON
-        document.getElementById(`${id}`).classList.remove('seleccionado');
-        document.querySelector(`[valor='${id}']`).classList.remove('visible');
-        document.querySelector(`[value='${id}']`).classList.remove('arrow');
+      document.getElementById(`${id}`).classList.remove('seleccionado');
+      document.querySelector(`[valor='${id}']`).classList.remove('visible');
+      document.querySelector(`[value='${id}']`).classList.remove('arrow');
     }
   }
 
