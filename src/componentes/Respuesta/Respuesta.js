@@ -15,13 +15,13 @@ function Respuesta({ texto, textoRta, id }) {
     if(!estado){
       document.getElementById(`${id}`).classList.add('seleccionado');
       document.querySelector(`[valor='${id}']`).classList.add('visible');
-      document.querySelector('.respuesta-arrow').classList.add('arrow');
+      document.querySelector(`[value='${id}']`).classList.add('arrow');
     }
     
     if(estado) {
         document.getElementById(`${id}`).classList.remove('seleccionado');
         document.querySelector(`[valor='${id}']`).classList.remove('visible');
-        document.querySelector('.respuesta-arrow').classList.remove('arrow');
+        document.querySelector(`[value='${id}']`).classList.remove('arrow');
     }
   }
 
@@ -31,7 +31,7 @@ function Respuesta({ texto, textoRta, id }) {
       <p className="respuesta-texto">
         {texto}
       </p>
-      <img src={Arrow} className="respuesta-arrow"/>
+      <img src={Arrow} className="respuesta-arrow" value={id}/>
       <p className="respuesta-wrapper-texto" valor={id}>
         {textoRta}
       </p>

@@ -20,14 +20,11 @@
   margin-top: 15px;
   text-align: justify;
   display: none;
+  color: var(--Dark-grayish-blue)
 }
 
 .arrow {
   transform: rotate(180deg);
-}
-
-.linea {
-  border-bottom: 1px solid rgba(146, 146, 146, 0.616);
 }
 
 .seleccionado {
@@ -36,4 +33,14 @@
 
 .visible {
   display: flex;
+}
+
+@media (max-width: 912px) {
+  .respuesta {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .respuesta-texto {
+    text-size-adjust: auto;
+  }
 }

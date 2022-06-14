@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
 :root{
   --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
 --Soft-red: hsl(14, 88%, 65%);
@@ -29,6 +32,11 @@
 html, body {
   background: linear-gradient(var(--Soft-violet), var(--Soft-blue)) no-repeat fixed;
   font-size: 12px;
+  font-family: 'Kumbh sans',sans-serif;
+}
+
+h1 {
+  font-size: 30px;
 }
 
 .flexbox {
@@ -55,10 +63,43 @@ html, body {
   position: absolute;
   width: 700px;
   left: -230px;
+  margin: -50px 0px;
 }
 
 
 .logo-mujer {
   position: relative;
   left: -10px;
+}
+
+@media (max-width: 912px) {
+  .flexbox {
+    margin: 100px auto;
+  }
+
+  .container {
+    min-height: 300px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 10px;
+    position: static;
+    border-radius: 25px;
+
+  }
+
+  .pattern {
+    position: relative;
+    width: 90%;
+    left: 0;
+    top: -155px;
+  }
+
+  .logo-mujer {
+    position: absolute;
+    width: 80%;
+    left: 38px;
+    top: 0px;
+  }
 }
