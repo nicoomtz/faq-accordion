@@ -33,7 +33,6 @@
 
 .visible {
   display: flex;
-  transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 912px) {

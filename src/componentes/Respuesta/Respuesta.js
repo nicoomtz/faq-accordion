@@ -15,9 +15,18 @@ function Respuesta({ texto, textoRta, id }) {
     if(!estado){
       // Cerrar otro elemento si es que está abierto
       if(document.querySelector('.seleccionado')){
-      document.querySelectorAll('.respuesta-texto').classList.remove('seleccionado');
-      document.querySelectorAll('.respuesta-wrapper-texto').classList.remove('visible');
-      document.querySelectorAll('.respuesta-wrapper-texto').classList.remove('arrow');
+        if(document.querySelector('.seleccionado'))
+          document.querySelector('.seleccionado').classList.remove('seleccionado');
+
+          if(document.querySelector('.visible'))
+            {
+              document.querySelector('.visible').classList.remove('visible');
+
+              if(document.querySelector('.arrow'))
+                {
+                  document.querySelector('.arrow').classList.remove('arrow');
+                }
+        }
     }
       
       // Switchear elemento a ON
